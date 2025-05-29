@@ -279,7 +279,7 @@
       </Label>
       <HBox alignment="CENTER" prefHeight="99.0" prefWidth="1400.0">
          <children>
-            <Button fx:id="arrowButton" mnemonicParsing="false" onAction="#handleArrowClick" prefHeight="60.0" prefWidth="120.0" style="-fx-border-color: red; -fx-background-color: transparent; -fx-border-radius: 10;" text="◄" textFill="RED">
+            <Button  mnemonicParsing="false" onAction="#handleArrowClick" prefHeight="60.0" prefWidth="120.0" style="-fx-border-color: red; -fx-background-color: transparent; -fx-border-radius: 10;" text="◄" textFill="RED">
                <font>
                   <Font name="System Bold" size="40.0" />
                </font>
@@ -287,7 +287,7 @@
                   <Insets right="1000.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="arrowButton" mnemonicParsing="false" onAction="#handleArrowClick" prefHeight="70.0" prefWidth="120.0" style="-fx-border-color: red; -fx-background-color: transparent; -fx-border-radius: 10;" text="►" textFill="RED">
+            <Button  mnemonicParsing="false" onAction="#handleArrowClick" prefHeight="70.0" prefWidth="120.0" style="-fx-border-color: red; -fx-background-color: transparent; -fx-border-radius: 10;" text="►" textFill="RED">
                <font>
                   <Font size="40.0" />
                </font>
