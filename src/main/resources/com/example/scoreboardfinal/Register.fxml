@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="629.0" prefWidth="800.0" spacing="15" style="-fx-background-color: white; -fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.scoreboardfinal.RegisterController">
+   <ImageView fitHeight="211.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@balll.jpg" />
+      </image>
+   </ImageView>
+
+   <Label prefHeight="43.0" prefWidth="242.0" text="Register New User" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+      <font>
+         <Font name="Agency FB Bold" size="35.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="5.0" />
+      </VBox.margin>
+   </Label>
+
+   <TextField fx:id="usernameField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Username" style="-fx-background-radius: 5; -fx-background-color: transaprent; -fx-padding: 8; -fx-border-color: red; -fx-border-radius: 30;">
+      <font>
+         <Font name="Agency FB Bold" size="15.0" />
+      </font></TextField>
+
+   <PasswordField fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Password" style="-fx-background-radius: 5; -fx-padding: 8; -fx-background-color: transparent; -fx-border-color: red; -fx-border-radius: 30;">
+      <font>
+         <Font name="Agency FB Bold" size="15.0" />
+      </font></PasswordField>
+
+   <PasswordField fx:id="confirmPasswordField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="Confirm Password" style="-fx-background-radius: 5; -fx-padding: 8; -fx-background-color: transaprent; -fx-border-color: red; -fx-border-radius: 30;">
+      <font>
+         <Font name="Agency FB Bold" size="15.0" />
+      </font></PasswordField>
+
+   <Label fx:id="registerMessageLabel" textFill="red" />
+
+   <Button fx:id="registerButton" onAction="#handleRegister" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Register">
+      <font>
+         <Font name="Agency FB Bold" size="15.0" />
+      </font></Button>
+
+   <Button fx:id="backToLoginButton" onAction="#openLoginWindow" prefHeight="30" prefWidth="150.0" style="-fx-border-color: red; -fx-background-color: red; -fx-background-radius: 5;" text="Already have Account" textFill="WHITE">
+      <font>
+         <Font name="Agency FB Bold" size="15.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="20.0" />
+      </VBox.margin></Button>
+</VBox>
